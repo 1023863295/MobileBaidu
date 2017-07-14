@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.pear.mobilebaidu">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/baidu"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/baidu"
+        android:supportsRtl="true"
+        android:name=".global.MyApplication"
+        android:theme="@style/MyStyle">
+        <activity android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/splashTheme"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.SettingAty"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.HistoryAty"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.AboutAty"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="cn.shpear.ad.sdk.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <service android:name="cn.shpear.ad.sdk.service.AppService" android:exported="false" />
+    </application>
+
+</manifest>

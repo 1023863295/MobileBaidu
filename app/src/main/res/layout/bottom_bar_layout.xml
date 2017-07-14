@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/bottom_btn_back"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@drawable/buttons_bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_1_b_gray"/>
+
+    <ImageButton
+        android:id="@+id/bottom_btn_next"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@drawable/buttons_bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_2_next_gray" />
+
+    <ImageButton
+        android:id="@+id/bottom_btn_tools"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttons_bottom"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tool_black"/>
+    <ImageButton
+        android:id="@+id/bottom_btn_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttons_bottom"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_black"/>
+
+</LinearLayout>

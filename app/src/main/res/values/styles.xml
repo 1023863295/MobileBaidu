@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="splashTheme" parent="MyStyle">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Tools_Text_style">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">20px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="popwindow_menu_alpha_anim_style">
+        <item name="android:windowEnterAnimation">@anim/alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha_out</item>
+    </style>
+
+    <style name="History_Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/newTextColor</item>
+    </style>
+
+    <style name="History_Url">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/newTextColor</item>
+    </style>
+
+</resources>

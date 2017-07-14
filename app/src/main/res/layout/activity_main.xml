@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="cn.pear.mobilebaidu.ui.MainActivity">
+
+    <include
+        android:id="@+id/main_bottom_bar"
+        layout="@layout/bottom_bar_layout"></include>
+
+    <WebView
+        android:id="@+id/main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_bar">
+
+    </WebView>
+
+
+    <FrameLayout
+        android:id="@+id/main_videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/main_web_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress"
+        android:visibility="gone"
+        android:secondaryProgress="0"/>
+
+</RelativeLayout>
